@@ -28,7 +28,7 @@ Node.js / Fastify / TypeScript backend for the Money Makers Academy platform.
 
 | Phase | Name                  | Priority | Status   | Commit  |
 | ----- | --------------------- | -------- | -------- | ------- |
-| 1     | Setup base            | CRÍTICA  | ✅ done   | PENDING |
+| 1     | Setup base            | CRÍTICA  | ✅ done   | f97d691 |
 | 2     | Auth + Profile        | CRÍTICA  | ❌ todo   | -       |
 | 3     | Trades                | CRÍTICA  | ❌ todo   | -       |
 | 4     | Signals               | CRÍTICA  | ❌ todo   | -       |
