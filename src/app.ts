@@ -10,6 +10,11 @@ import { tradeRoutes } from './routes/trades.js';
 import { signalRoutes } from './routes/signals.js';
 import { chatRoutes } from './routes/chat.js';
 import { courseRoutes } from './routes/courses.js';
+import { bookingRoutes } from './routes/bookings.js';
+import { broadcastRoutes } from './routes/broadcasts.js';
+import { socialRoutes } from './routes/social.js';
+import { museumRoutes } from './routes/museum.js';
+import { paymentRoutes } from './routes/payments.js';
 import { AppError } from './errors/AppError.js';
 import { supabase } from './lib/supabase.js';
 
@@ -76,6 +81,11 @@ export const buildApp = async () => {
   await app.register(signalRoutes, { prefix: '/api' });
   await app.register(chatRoutes, { prefix: '/api' });
   await app.register(courseRoutes, { prefix: '/api' });
+  await app.register(bookingRoutes, { prefix: '/api' });
+  await app.register(broadcastRoutes, { prefix: '/api' });
+  await app.register(socialRoutes, { prefix: '/api' });
+  await app.register(museumRoutes, { prefix: '/api' });
+  await app.register(paymentRoutes, { prefix: '/api' });
 
   return app;
 };
