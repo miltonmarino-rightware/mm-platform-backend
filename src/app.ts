@@ -5,6 +5,7 @@ import cors from '@fastify/cors';
 import rateLimit from '@fastify/rate-limit';
 import { env } from './config/env.js';
 import { requestIdMiddleware } from './middleware/requestId.js';
+import { profileRoutes } from './routes/profile.js';
 import { AppError } from './errors/AppError.js';
 import { supabase } from './lib/supabase.js';
 
@@ -64,6 +65,9 @@ export const buildApp = async () => {
   app.get('/api/version', async () => {
     return { version: '0.1.0' };
   });
+
+  // Register Routes
+  await app.register(profileRoutes, { prefix: '/api' });
 
   return app;
 };
