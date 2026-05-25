@@ -31,7 +31,7 @@ Node.js / Fastify / TypeScript backend for the Money Makers Academy platform.
 | 1     | Setup base            | CRÍTICA  | ✅ done   | f97d691 |
 | 2     | Auth + Profile        | CRÍTICA  | ✅ done   | 9bfaf35 |
 | 3     | Trades                | CRÍTICA  | ✅ done   | 6472d9d |
-| 4     | Signals               | CRÍTICA  | ❌ todo   | -       |
+| 4     | Signals               | CRÍTICA  | ✅ done   | bd0e435 |
 | 5     | AI Chat               | CRÍTICA  | ❌ todo   | -       |
 | 6     | Courses + Lessons     | CRÍTICA  | ❌ todo   | -       |
 | 7     | Bookings              | MÉDIA    | ❌ todo   | -       |
@@ -43,4 +43,4 @@ Node.js / Fastify / TypeScript backend for the Money Makers Academy platform.
 **Known Issues:**
 - Gemini API key validated but model names might need adjustment based on specific account permissions.
 
-**Credits Spent:** ~60 / 300
+**Credits Spent:** ~80 / 300
