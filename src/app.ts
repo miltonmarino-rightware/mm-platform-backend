@@ -6,6 +6,7 @@ import rateLimit from '@fastify/rate-limit';
 import { env } from './config/env.js';
 import { requestIdMiddleware } from './middleware/requestId.js';
 import { profileRoutes } from './routes/profile.js';
+import { tradeRoutes } from './routes/trades.js';
 import { AppError } from './errors/AppError.js';
 import { supabase } from './lib/supabase.js';
 
@@ -68,6 +69,7 @@ export const buildApp = async () => {
 
   // Register Routes
   await app.register(profileRoutes, { prefix: '/api' });
+  await app.register(tradeRoutes, { prefix: '/api' });
 
   return app;
 };
